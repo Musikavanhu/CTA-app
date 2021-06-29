@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FlipClock.js Styling</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.7/flipclock.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  
+  <!-- partial:index.partial.html -->
+
+  <!-- User Promt  -->
+  <div class="container">
+    <div class="jumbotron">
+      <h1> Wait! special offer for <div id="location" class="sub">
+
+          <div class="address" style="color: red;"></div>
+        </div> residents.....</h1>
+
+      <h2> claim your offer before timer runs out !!!
+
+      </h2>
+
+
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+
+  <div class="countdown-wrapper">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div id="countdown" class="countdown"></div>
+  </div>
+  <footer>
+    <!-- had to add breaks for time  -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- had to add breaks for time  -->
+    <div class="jumbotron">
+      <div class="container">
+
+        <a href="https://conversionfanatics.com/cf-test-task/" class="myButton"
+          onclick="goog_report_conversion('http://example.com/your-link')">Claim Discount</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Google  -->
+
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    goog_snippet_vars = function () {
+      var w = window;
+      w.google_conversion_id = 12345678;
+      w.google_conversion_label = "abcDeFGHIJklmN0PQ";
+      w.google_conversion_value = 13.00;
+      w.google_conversion_currency = "USD";
+      w.google_remarketing_only = false;
+    }
+    // DO NOT CHANGE THE CODE BELOW.
+    goog_report_conversion = function (url) {
+      goog_snippet_vars();
+      window.google_conversion_format = "3";
+      var opt = new Object();
+      opt.onload_callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      }
+      var conv_handler = window['google_trackConversion'];
+      if (typeof (conv_handler) == 'function') {
+        conv_handler(opt);
+      }
+    }
+   /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js">
+  </script>
+
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.7/flipclock.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
